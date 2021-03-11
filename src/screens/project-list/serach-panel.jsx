@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 
 const firstCaptial = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);

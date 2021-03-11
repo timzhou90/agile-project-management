@@ -14,7 +14,6 @@ export const ProjectListScreen = () => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    console.log("param", param);
     fetch(`${apiUrl}/projects?${qs.stringify(cleanObject(param))}`).then(
       async (response) => {
         if (response.ok) {
